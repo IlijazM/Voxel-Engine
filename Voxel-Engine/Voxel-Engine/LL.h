@@ -1,16 +1,29 @@
 #pragma once
 
-#include <iostream>
+#include "Types.h"
+#include "PoolAllocator.h"
 
 namespace LL {
-	typedef struct { float x, y; }			vec2_t;
-	typedef struct { float x, y, z; }		vec3_t;
-	typedef struct { float x, y, z, w; }	vec4_t;
+	PoolAllocator<vec3_t> vec3_a;
 
-	typedef struct { float r, g, b; }		rgb_t;
-	typedef struct { float r, g, b, a; }	rgba_t;
+	void log(vec3_t* vec) {
+		std::cout << vec->x << " : " << vec->y << " : " << vec->z << std::endl;
+	}
 
-	typedef struct { float u, v; }			uv_t;
-	typedef struct { float nx, ny, nz; }	normals_t;
-	typedef struct { uint32_t a, b, c; }	indices_t;
+	void launch() {
+		
+		for (size_t i = 0; i < 1000; i++) {
+			vec3_t* v1 = vec3_a.allocate();
+		}
+
+		for (size_t i = 0; i < 1000; i++) {
+			vec3_t* v1 = vec3_a.allocate();
+		}
+
+		for (size_t i = 0; i < 1000; i++) {
+			vec3_t* v1 = vec3_a.allocate();
+		}
+
+	}
+
 }
