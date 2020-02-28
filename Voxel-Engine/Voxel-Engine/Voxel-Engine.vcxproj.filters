@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\LL">
+      <UniqueIdentifier>{3610ddf8-6862-4c56-b01b-546c0ed8ffd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Renderer">
+      <UniqueIdentifier>{869cafa4-3ff0-4f3d-8d67-8dd305908025}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -20,14 +26,20 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="LL.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="AllocatedVariables.h">
+      <Filter>Header Files\LL</Filter>
     </ClInclude>
-    <ClInclude Include="Types.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="LL.h">
+      <Filter>Header Files\LL</Filter>
     </ClInclude>
     <ClInclude Include="PoolAllocator.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>Header Files\LL</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Header Files\Renderer</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
