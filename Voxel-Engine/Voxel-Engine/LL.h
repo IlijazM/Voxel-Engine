@@ -12,11 +12,11 @@ namespace LL {
 	void launch() {
 		initAllocatores();
 
-		Renderer::init();
+		LLR::init();
 	}
 
 	void terminate() {
-		Renderer::terminate();
+		LLR::terminate();
 
 		terminateAllocatores();
 	}

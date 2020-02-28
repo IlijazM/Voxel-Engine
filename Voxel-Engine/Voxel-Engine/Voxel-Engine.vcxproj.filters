@@ -16,7 +16,7 @@
     <Filter Include="Header Files\LL">
       <UniqueIdentifier>{3610ddf8-6862-4c56-b01b-546c0ed8ffd3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Header Files\Renderer">
+    <Filter Include="Header Files\LLR">
       <UniqueIdentifier>{869cafa4-3ff0-4f3d-8d67-8dd305908025}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -39,7 +39,7 @@
       <Filter>Header Files\LL</Filter>
     </ClInclude>
     <ClInclude Include="Renderer.h">
-      <Filter>Header Files\Renderer</Filter>
+      <Filter>Header Files\LLR</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

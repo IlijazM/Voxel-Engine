@@ -3,7 +3,7 @@
 #include <iostream>
 #include <vector>
 
-#include <vulkan/vulkan.h>
+#include "vulkan/vulkan.h"
 
 #define ASSERT_VULKAN(val)                              \
     if (val != VK_SUCCESS)                              \
@@ -12,7 +12,7 @@
         return;                                         \
     }
 
-namespace Renderer {
+namespace LLR {
 
     VkInstance instance;
 
